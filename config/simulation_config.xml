@@ -1,0 +1,17 @@
+<simulation>
+    <dimensions>
+        <largeur>3</largeur>
+        <hauteur>3</hauteur>
+    </dimensions>
+    <probabilite>0.3</probabilite>
+    <arbresEnFeu>
+        <arbre>
+            <x>0</x>
+            <y>0</y>
+        </arbre>
+        <arbre>
+            <x>1</x>
+            <y>1</y>
+        </arbre>
+    </arbresEnFeu>
+</simulation>
