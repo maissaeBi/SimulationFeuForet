@@ -23,7 +23,7 @@ public class Simulation {
             int t = 0;
             // On maintient la simulation tant qu'il reste des arbres en feu.
             while (foret.contientArbresEnFeu()) {
-                System.out.println("Itération : " + t);
+                System.out.println("# Itération : " + t);
                 foret.afficherGrille();
                 System.out.println();
                 foret.propaguerFeu();
@@ -31,7 +31,8 @@ public class Simulation {
             }
             System.out.println("Itération finale : " + t);
             foret.afficherGrille();
-            System.out.println("Simulation terminée. Tous les arbres ont brûlé.");
+            System.out.println();
+            System.out.println("#### Simulation terminée.#####");
 
         } catch (Exception e) {
             logger.severe("Une erreur est survenue lors de l'exécution de la simulation : " + e.getMessage());

@@ -84,7 +84,7 @@ public class Foret {
                             int voisinX = i + di;
                             int voisinY = j + dj;
 
-                            // Vérifier si la position du voisin apartien au dimension de la grille
+                            // Vérifier si la position du voisin appartient aux dimensions de la grille
                             if (voisinX >= 0 && voisinX < hauteur && voisinY >= 0 && voisinY < largeur) {
                                 Position voisin = new Position(voisinX, voisinY);
 
