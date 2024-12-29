@@ -43,3 +43,7 @@ ForestFireSimulation/
 
 4. **Propagation du feu**  
    - Propagation du feu à travers la forêt à l'aide de la méthode `propagerFeu()`.
+
+#### Lancer l'application
+
+Pour lancer l'application, utilisez la fonction `main` de la classe `Simulation` située dans le dossier `src/simulation/`.
