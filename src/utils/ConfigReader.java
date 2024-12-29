@@ -46,7 +46,7 @@ public class ConfigReader {
 
             DocumentBuilder builder = factory.newDocumentBuilder();
 
-            // Chargez le fichier XML
+            // Charger le fichier XML
             Document document = builder.parse(xmlFile);
             document.getDocumentElement().normalize();
 
@@ -56,7 +56,7 @@ public class ConfigReader {
 
             arbresEnFeu = new ArrayList<>();
 
-            // Parcourez les positions des arbres en feu
+            // Parcourir les positions des arbres en feu
             NodeList arbreNodes = document.getElementsByTagName("arbre");
             for (int i = 0; i < arbreNodes.getLength(); i++) {
                 Element arbreElement = (Element) arbreNodes.item(i);
@@ -66,7 +66,7 @@ public class ConfigReader {
             }
 
         } catch (Exception e) {
-            logger.severe("Erreur critique lors de la lecture du fichier XML de configuration : "
+            logger.severe("Erreur lors de la lecture du fichier XML de configuration : "
                     + "Nom du fichier : 'simulation_config.xml', Détail de l'exception : " + e.getMessage());
         }
     }
