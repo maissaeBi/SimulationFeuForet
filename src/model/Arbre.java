@@ -14,7 +14,7 @@ public class Arbre {
     /**
      * Constructeur de l'arbre avec un état spécifique.
      *
-     * @param etat L'état de l'arbre (INTACT, EN_FEU, BRULE, etc.).
+     * @param etat L'état de l'arbre (INTACT, EN_FEU, BRULE).
      */
     public Arbre(Etat etat) {
         this.etat = etat;

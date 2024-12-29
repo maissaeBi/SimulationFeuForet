@@ -25,7 +25,7 @@ public class Position {
     /**
      * Vérifie si une position donnée est adjacente à la postion actuelle.
      * 
-     * Une position est considérée adjacente si elle se trouve à un cran horizontal, vertical ou diagonal.
+     * Une position est considérée adjacente si elle se trouve à un cran horizontal, vertical.
      * 
      * @param position La position à comparer avec la position actuelle.
      * @return `true` si les positions sont adjacentes, sinon `false`.
@@ -36,6 +36,6 @@ public class Position {
         int dy = Math.abs(this.y - position.y);
 
         // Vérifier l'adjacence horizontale, verticale
-        return (dx <= 1 && dy <= 1) && !(dx == 1 && dy == 1); 
+        return dx <= 1 && dy <= 1; 
     }
 }
